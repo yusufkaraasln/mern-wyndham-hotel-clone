@@ -1,0 +1,40 @@
+.footer { 
+
+    
+
+  border-top: 2px solid #393a3b;
+  display: flex;
+  background: #18191a;
+  color: #777;
+  flex-direction: column;
+  justify-content: space-between;
+  
+
+   
+  &-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-info{
+
+        i{
+            color: #fff;
+            border-radius: 50%;
+            background-color: #ce0538;
+            padding: 10px;
+            margin: 20px 20px 0 20px;
+             
+        }
+       
+    }
+    span{
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        color: #fff;
+        font-weight: 500;
+    }
+  }
+  
+}

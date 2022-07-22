@@ -1,0 +1,104 @@
+.spa-wellness {
+  height: 100vh;
+
+  .header {
+    position: sticky;
+    top: 0;
+
+    .slider {
+      position: relative;
+      &.active {
+      }
+      &-image {
+        width: 100vw;
+        object-fit: cover;
+        height: 60vh;
+      }
+      .rigt-arrow {
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #d11242;
+        padding: 20px;
+        border-radius: 50%;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+      }
+      .left-arrow {
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #d11242;
+        padding: 20px;
+        border-radius: 50%;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+      }
+    }
+  }
+
+  main {
+    position: absolute;
+    height: 100vh;
+    z-index: 99999;
+    background-color: #18191a;
+    .spa-wellness-details {
+      position: relative;
+
+      span {
+        font-size: 50px;
+        
+        text-align: center;
+        border-radius: 60px;
+        margin-bottom: 60px;
+        color: #b0b3b8;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      height: 100vh;
+      padding: 0 5%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      overflow: auto;
+
+      &-container {
+        background: #d11242;
+        padding: 50px;
+        border-radius: 100px;
+
+        p {
+          color: #fff;
+          font-size: 20px;
+          margin-left: 10%;
+          font-weight: 500;
+          background: #18191a;
+          padding: 30px;
+          border-radius: 50px;
+          border-top-right-radius: 0;
+          margin-bottom: 30px;
+        }
+        ul {
+          color: #fff;
+          font-size: 20px;
+          margin-right: 5%;
+          font-weight: 300;
+          background: #18191a;
+          padding: 30px;
+          border-radius: 50px;
+          border-top-left-radius: 0;
+          li {
+            margin: 30px 0;
+          }
+        }
+      }
+    }
+  }
+}

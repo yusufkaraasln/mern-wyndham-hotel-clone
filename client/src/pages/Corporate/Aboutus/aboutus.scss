@@ -1,0 +1,190 @@
+body,
+html {
+  height: 100vh;
+
+  .aboutus {
+    .header {
+      &-img {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          @media (max-width: 768px) {
+            height: 30vh;
+          }
+          width: 100vw;
+        }
+        & > strong {
+          @media (max-width: 768px) {
+            padding: 5px 20px;
+            font-size: 2rem;
+            font-weight: 400;
+          }
+          font-size: 2.5rem;
+          font-weight: bold;
+          color: #fff;
+          position: absolute;
+          bottom: 0px;
+          font-weight: 600;
+          color: #b0b3b894;
+
+          background: #18191a;
+          padding: 20px 50px;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: auto;
+      width: 80%;
+      @media (max-width: 768px) {
+        width: 100%;
+        padding: 0 10px;
+      }
+      &-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: #b0b3b8;
+        font-size: 1.5rem;
+        h2 {
+          margin: 100px 0 50px;
+          font-weight: 400;
+
+          letter-spacing: 1.4px;
+        }
+        p {
+          margin: 20px;
+          font-weight: 300;
+          line-height: 4rem;
+        }
+      }
+      &-details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 50px;
+        &-item {
+          @media (max-width: 768px) {
+            width: 100%;
+            flex-direction: column;
+          }
+          width: 80%;
+          background-color: #3b3b3b41;
+          padding: 20px;
+          display: flex;
+          border-radius: 50px;
+
+          &-text {
+            @media (max-width: 768px) {
+              width: 100%;
+              flex-direction: column;
+              flex: 0;
+              margin: 0;
+              
+            }
+            flex: 1;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: space-evenly;
+            h3 {
+                
+              font-weight: 400;
+              font-size: 1.5rem;
+              margin: 0;
+              margin: 20px;
+              color: #b0b3b8;
+            }
+            p {
+
+              font-weight: 300;
+              font-size: 1.3rem;
+              margin: 0;
+              margin:20px;
+              color: #b0b3b8;
+            }
+          }
+          &-img {
+            @media (max-width: 768px) {
+              width: 100%;
+              flex-direction: column;
+              flex: 0;
+              margin: 0;
+              padding: 20px;
+              object-fit: cover;
+            }
+            flex: 2;
+            width: 80%;
+            height: 300px;
+            margin: 20px 0;
+            img {
+              border-radius: 20px;
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+      &-features {
+        margin: 10rem 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &-items {
+          @media (max-width: 768px) {
+            flex-direction: column;
+          }
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: space-between;
+          .content-features-item {
+            @media (max-width: 768px) {
+              width: 100%;
+              margin: 20px;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            background-color: red;
+            margin: 10px;
+            width: 30%;
+            padding: 5rem;
+            background: #4949493f;
+            border-radius: 50px;
+            &-img {
+              i {
+                font-size: 3rem;
+                color: #d11242;
+                margin-bottom: 30px;
+              }
+            }
+            &-text {
+              font-size: 1.5rem;
+              font-weight: 300;
+              color: #fff;
+              margin: 0;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

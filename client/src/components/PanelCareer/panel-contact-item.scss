@@ -1,0 +1,12 @@
+.contact-item-single{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ce0538;
+    border-radius: 5px;
+    padding: 20px;
+    span{
+        color: #fff;
+        font-size: 20px;
+    }
+}

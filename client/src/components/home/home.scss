@@ -1,0 +1,579 @@
+.container {
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+
+  width: 100vw;
+  @media (max-width: 768px) {
+    margin: 0;
+    margin-left: 0;
+    height: 52vh;
+    min-height: auto;
+    max-height: auto;
+    flex-direction: column;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #18191a;
+
+  .slider {
+    margin-top: 50px;
+    width: 100vw;
+    max-height: 830px;
+    min-height: 830px;
+    z-index: 99999999;
+    position: relative;
+    height: 100vh;
+    @media (max-width: 768px) {
+      max-height: 300px;
+      min-height: 300px;
+    }
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    &-image {
+      @media (max-width: 768px) {
+        width: 100%;
+        filter: brightness(40%);
+      }
+      border-radius: 10px;
+      width: calc(100vw - 10rem);
+      max-height: 720px;
+      min-height: 700px;
+      object-fit: cover;
+    }
+    .rigt-arrow {
+      position: absolute;
+      top: 50%;
+      right: 2rem;
+      font-size: 3rem;
+      color: #b0b3b8;
+      z-index: 10;
+      cursor: pointer;
+      user-select: none;
+    }
+    .left-arrow {
+      position: absolute;
+      top: 50%;
+      left: 2rem;
+      font-size: 3rem;
+      color: #b0b3b8;
+      z-index: 10;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .slide {
+      opacity: 0;
+      .slider-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(70%);
+        border-radius: 10px;
+      }
+      transition-duration: 1s all;
+    }
+    .slide.active {
+      .slider-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      opacity: 1;
+      transition-duration: 1s;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    height: 10rem;
+    @media (max-width: 768px) {
+      height: 7.5rem;
+    }
+    width: 100%;
+    color: #fff;
+    fill: #fff;
+  }
+  .circular-logo {
+    position: absolute;
+    top: 8rem;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .booking {
+    position: absolute;
+    bottom: 30px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    z-index: 1999;
+    border-radius: 30px;
+    width: 70%;
+    background: #ce0538;
+    color: #b0b3b8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+
+    .date-day {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .date-login {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        h4 {
+          color: #fff;
+          font-weight: 400;
+          font-size: 20px;
+        }
+      }
+
+      .date-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        h4 {
+          color: #fff;
+          font-weight: 400;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .date-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+
+      .room {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        h4 {
+          color: #fff;
+          font-weight: 400;
+          font-size: 20px;
+        }
+        &-settings {
+          button {
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 10px;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+          }
+          span {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 20px;
+            font-weight: bold;
+          }
+        }
+      }
+      .adult {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        h4 {
+          color: #fff;
+          font-weight: 400;
+          font-size: 20px;
+        }
+        &-settings {
+          button {
+            padding: 5px 15px;
+            border-radius: 10px;
+            border: none;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+
+          }
+          span {
+            margin: 0 10px;
+            font-size: 20px;
+            font-weight: bold;
+
+            color: #fff;
+          }
+        }
+      }
+      .child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        h4 {
+          color: #fff;
+          font-weight: 400;
+          font-size: 20px;
+        }
+        &-settings {
+          button {
+            padding: 5px 15px;
+            border-radius: 10px;
+            border: none;
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+
+          }
+
+          span {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 20px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .submit {
+      background: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: #ce0538;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  .booking-section-small {
+    display: none;
+    @media (max-width: 768px) {
+      margin-top: 9.2rem;
+      display: flex;
+      flex-direction: column;
+      &-text {
+        text-align: center;
+        font-size: 100px;
+      }
+      h2 {
+        cursor: pointer;
+        text-align: center;
+        background: #242526;
+        z-index: 99999999;
+
+        color: #b0b3b8;
+        font-weight: 400;
+        padding: 15px 0;
+      }
+      &-booking {
+        padding-top: 30px;
+        transition: all 400ms;
+        position: relative;
+        z-index: 113;
+        h4 {
+          font-weight: 400;
+          color: #b0b3b8;
+        }
+        .submit {
+          text-align: center;
+          color: #b0b3b8;
+
+          width: 30%;
+          background-color: #242526;
+          border: 3px solid #393a3b;
+          margin: auto;
+          padding: 10px;
+          border-radius: 10px;
+          margin-bottom: 1.3rem;
+          font-weight: 400;
+          font-size: 20px;
+        }
+        &.active {
+          transform: translateY(-120%);
+          visibility: hidden;
+        }
+        background-color: #18191a;
+        .date-day {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 20px;
+          .date-login {
+            display: flex;
+            i{
+              color: #b0b3b8;
+            }
+            gap: 10px;
+            font-size: 1.2rem;
+
+            align-items: center;
+          }
+          .date-left {
+            display: flex;
+            font-size: 1.2rem;
+
+            gap: 10px;
+            color: #b0b3b8;
+            align-items: center;
+          }
+        }
+        .date-section {
+          margin: 30px;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          justify-content: space-around;
+          .adult {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #fff;
+            font-size: 1.2rem;
+            &-settings {
+              button {
+                padding: 5px 15px;
+                border-radius: 10px;
+                border: 3px solid #393a3b;
+                color: #ce0538;
+                background: #242526;
+                font-size: 1.2rem;
+                font-weight: bold;
+              }
+              span {
+                margin: 0 10px;
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: #b0b3b8;
+              }
+            }
+          }
+          .child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #fff;
+            font-size: 1.2rem;
+            &-settings {
+              button {
+                padding: 5px 15px;
+                border-radius: 10px;
+
+                border: 3px solid #393a3b;
+                color: #ce0538;
+                background: #242526;
+                font-size: 1.2rem;
+                font-weight: bold;
+              }
+              span {
+                margin: 0 10px;
+                color: #b0b3b8;
+                font-size: 1.2rem;
+                font-weight: bold;
+              }
+            }
+          }
+          .room {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #fff;
+            font-size: 1.2rem;
+            &-settings {
+              button {
+                padding: 5px 15px;
+                border-radius: 10px;
+                border: 3px solid #393a3b;
+                color: #ce0538;
+                background: #242526;
+                font-size: 1.2rem;
+                font-weight: bold;
+              }
+              span {
+                margin: 0 10px;
+                color: #b0b3b8;
+                font-size: 1.2rem;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width:420px){
+      margin-top: 9.2rem;
+      display: flex;
+      flex-direction: column;
+      &-text {
+        text-align: center;
+        font-size: 100px;
+      }
+      h2 {
+        cursor: pointer;
+        text-align: center;
+        background: #242526;
+        z-index: 99999999;
+
+        color: #b0b3b8;
+        font-weight: 400;
+        padding: 15px 0;
+      }
+      &-booking {
+        padding-top: 30px;
+        transition: all 400ms;
+        position: relative;
+        z-index: 113;
+        h4 {
+          font-weight: 400;
+          color: #b0b3b8;
+        }
+        .submit {
+          text-align: center;
+          color: #b0b3b8;
+
+          width: 40%;
+          background-color: #242526;
+          border: 3px solid #393a3b;
+          margin: auto;
+          padding: 10px;
+          border-radius: 10px;
+          margin-bottom: 1.3rem;
+          font-weight: 400;
+          font-size: 20px;
+        }
+        &.active {
+          transform: translateY(-120%);
+          visibility: hidden;
+        }
+        background-color: #18191a;
+        .date-day {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          padding: 0 20px;
+          margin-top: 20px;
+          .date-login {
+            display: flex;
+            i{
+              color: #b0b3b8;
+            }
+            gap: 40px;
+            font-size: 1.2rem;
+
+            align-items: center;
+          }
+          .date-left {
+            margin-top: 30px;
+            display: flex;
+            font-size: 1.2rem;
+
+            gap: 40px;
+            color: #b0b3b8;
+            align-items: center;
+          }
+        }
+        .date-section {
+          margin: 30px;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          justify-content: space-around;
+          .adult {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #fff;
+            font-size: 1.2rem;
+            &-settings {
+              button {
+                padding: 5px 15px;
+                border-radius: 10px;
+                border: 3px solid #393a3b;
+                color: #ce0538;
+                background: #242526;
+                font-size: 1.2rem;
+                font-weight: bold;
+              }
+              span {
+                margin: 0 10px;
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: #b0b3b8;
+              }
+            }
+          }
+          .child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #fff;
+            font-size: 1.2rem;
+            &-settings {
+              button {
+                padding: 5px 15px;
+                border-radius: 10px;
+
+                border: 3px solid #393a3b;
+                color: #ce0538;
+                background: #242526;
+                font-size: 1.2rem;
+                font-weight: bold;
+              }
+              span {
+                margin: 0 10px;
+                color: #b0b3b8;
+                font-size: 1.2rem;
+                font-weight: bold;
+              }
+            }
+          }
+          .room {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #fff;
+            font-size: 1.2rem;
+            &-settings {
+              button {
+                padding: 5px 15px;
+                border-radius: 10px;
+                border: 3px solid #393a3b;
+                color: #ce0538;
+                background: #242526;
+                font-size: 1.2rem;
+                font-weight: bold;
+              }
+              span {
+                margin: 0 10px;
+                color: #b0b3b8;
+                font-size: 1.2rem;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

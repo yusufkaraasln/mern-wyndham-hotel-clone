@@ -1,0 +1,141 @@
+.navbar {
+  max-height: 5rem;
+  margin: auto;
+  position: fixed;
+  a {
+    color: #b0b3b8;
+  }
+  .small-item {
+    display: none;
+    @media (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      margin: 15px 10px;
+
+      img {
+        height: 35px;
+      }
+      font-size: 35px;
+    }
+  }
+  top: 0px;
+  z-index: 9999999999999999999999;
+  width: 100%;
+  padding: 10px;
+  background: #242526;
+  border-bottom: 3px solid #393a3b;
+
+  .small-navbar-container {
+    display: none;
+    transition: all 0.5s ease;
+    @media (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-around;
+      flex-flow: column;
+      margin: auto;
+      height: 40vh;
+      width: 80%;
+      padding: 0;
+      margin: auto;
+      border-top-left-radius: 20px;
+      font-size: 20px;
+      border-top-right-radius: 20px;
+      transform: translateY(300%);
+    }
+
+    &.ready {
+      transform: translateY(130%);
+      background: #d11242;
+    }
+  }
+
+  color: #b0b3b8;
+  transition: all 200ms ease-in-out;
+  &.active {
+    @media (max-width: 768px) {
+      width: 100%;
+      border-radius: 0;
+      border: none;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    background: #242526fb;
+    border: 3px solid #393a3b;
+    border-top: 0;
+    margin: auto;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+
+  ul > li {
+    @media (max-width: 768px) {
+      display: none;
+    }
+    cursor: pointer;
+    transition: color 400ms ease-in;
+    a {
+      transition: color 400ms ease-in;
+
+      &:hover {
+        color: #d11242;
+      }
+    }
+    &:hover {
+      color: #d11242;
+    }
+  }
+
+  & > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 4rem;
+    & > li {
+      background-color: #393a3b6b;
+      padding: 10px;
+      padding: 12px 25px;
+      margin: 10px 0;
+      border-radius: 5px;
+      position: relative;
+      &:hover ul {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      ul {
+        transition: all 400ms ease-in-out;
+
+        position: absolute;
+        left: 0;
+        top: 47px;
+        background: #242526fb;
+        border-radius: 10px;
+        border: 1px solid #393a3b;
+        visibility: hidden;
+        opacity: 0;
+        li {
+          background-color: #3a3b3c42;
+          padding: 10px;
+          width: 170px;
+          font-size: 15px;
+          margin: 10px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  .lang {
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    color: #d11242;
+  }
+}

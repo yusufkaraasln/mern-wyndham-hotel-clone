@@ -1,0 +1,125 @@
+.food-details {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.616);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    &-container {
+      background: #d11242;
+      border-radius: 1rem;
+      width: 50%;
+      overflow-y: auto;
+      max-height: 80%;
+
+      &-item {
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        
+
+        li {
+          margin: 2rem 0;
+        }
+
+        
+      }
+    }
+
+
+    &-add{
+        form{
+            .food-item{
+                width: 30vw;
+                margin: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                color: #fff;
+                background: #d11242;
+                span{
+                    margin: 1rem 0;
+                    font-size: 1.5rem;
+
+                }
+                input{
+                    border-radius: 4px;
+                    outline: none;
+                    border: none;
+                    width: 80%;
+                    padding: 1rem;
+                }
+                button{
+                    width: 50%;
+                    padding: 1rem;
+                    border: none;
+                    border-radius: 2rem;
+                    outline: none;
+                    color: #d11242;
+                    background: #fff;
+                    cursor: pointer;
+                }
+                padding: 3rem;
+            }
+        }
+    }
+    &-update{
+      form{
+          .food-item{
+
+            .update-mode{
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              i,span{
+                font-size: 2rem;
+              }
+              i{
+                cursor: pointer;
+              }
+            
+            }
+
+              width: 30vw;
+              margin: 3rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              color: #fff;
+              background: #242526;
+              span{
+                  margin: 1rem 0;
+                  font-size: 1.5rem;
+
+              }
+              input{
+                  border-radius: 4px;
+                  outline: none;
+                  border: none;
+                  width: 80%;
+                  padding: 1rem;
+              }
+              button{
+                  width: 50%;
+                  padding: 1rem;
+                  border: none;
+                  border-radius: 2rem;
+                  outline: none;
+                  color: #d11242;
+                  background: #fff;
+                  cursor: pointer;
+              }
+              padding: 3rem;
+          }
+      }
+  }
+  }
