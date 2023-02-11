@@ -1,9 +1,13 @@
 import React from "react";
 import "./rooms.scss";
 import { Link } from "react-router-dom";
-import Tooltip from "@material-ui/core/Tooltip";
-import Button from "@material-ui/core/Button";
-import Box from "@material-ui/core/Box";
+
+const Tooltip = () => {
+  return <></>;
+};
+const Box = () => {
+  return <></>;
+};
 
 function Rooms() {
   return (
@@ -22,10 +26,7 @@ function Rooms() {
                 <span>Superior Oda</span>
               </div>
               <div className="superior-room_content-items-2">
-                <Tooltip
-                  title={<span style={{ fontSize: "14px" }}>Büyük Yatak</span>}
-                  placement="top"
-                >
+                <Tooltip>
                   <Box>
                     <i class="fa-solid fa-bed"></i>
                   </Box>
@@ -56,33 +57,29 @@ function Rooms() {
                 <Tooltip
                   placement="top"
                   title={
-                    <span style={{ fontSize: "14px" }}>Direkt Hatlı Telefon</span>
+                    <span style={{ fontSize: "14px" }}>
+                      Direkt Hatlı Telefon
+                    </span>
                   }
                 >
                   <Box>
-                  <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-phone"></i>
                   </Box>
                 </Tooltip>
                 <Tooltip
                   placement="bottom"
-                  title={
-                    <span style={{ fontSize: "14px" }}>Led TV</span>
-                  }
+                  title={<span style={{ fontSize: "14px" }}>Led TV</span>}
                 >
                   <Box>
-                <i class="fa-solid fa-tv"></i>
-                    
+                    <i class="fa-solid fa-tv"></i>
                   </Box>
                 </Tooltip>
                 <Tooltip
                   placement="bottom"
-                  title={
-                    <span style={{ fontSize: "14px" }}>Duş</span>
-                  }
+                  title={<span style={{ fontSize: "14px" }}>Duş</span>}
                 >
                   <Box>
-                <i class="fa-solid fa-shower"></i>
-                    
+                    <i class="fa-solid fa-shower"></i>
                   </Box>
                 </Tooltip>
                 <Tooltip
@@ -92,22 +89,17 @@ function Rooms() {
                   }
                 >
                   <Box>
-                <i class="fa-solid fa-mug-hot"></i>
-                    
+                    <i class="fa-solid fa-mug-hot"></i>
                   </Box>
                 </Tooltip>
                 <Tooltip
                   placement="bottom"
-                  title={
-                    <span style={{ fontSize: "14px" }}>Wifi</span>
-                  }
+                  title={<span style={{ fontSize: "14px" }}>Wifi</span>}
                 >
                   <Box>
-                <i class="fa-solid fa-wifi"></i>
-                    
+                    <i class="fa-solid fa-wifi"></i>
                   </Box>
                 </Tooltip>
-
               </div>
               <div className="superior-room_content-items-3">
                 <button>
@@ -158,33 +150,29 @@ function Rooms() {
                 <Tooltip
                   placement="top"
                   title={
-                    <span style={{ fontSize: "14px" }}>Direkt Hatlı Telefon</span>
+                    <span style={{ fontSize: "14px" }}>
+                      Direkt Hatlı Telefon
+                    </span>
                   }
                 >
                   <Box>
-                  <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-phone"></i>
                   </Box>
                 </Tooltip>
                 <Tooltip
                   placement="bottom"
-                  title={
-                    <span style={{ fontSize: "14px" }}>Led TV</span>
-                  }
+                  title={<span style={{ fontSize: "14px" }}>Led TV</span>}
                 >
                   <Box>
-                <i class="fa-solid fa-tv"></i>
-                    
+                    <i class="fa-solid fa-tv"></i>
                   </Box>
                 </Tooltip>
                 <Tooltip
                   placement="bottom"
-                  title={
-                    <span style={{ fontSize: "14px" }}>Duş</span>
-                  }
+                  title={<span style={{ fontSize: "14px" }}>Duş</span>}
                 >
                   <Box>
-                <i class="fa-solid fa-shower"></i>
-                    
+                    <i class="fa-solid fa-shower"></i>
                   </Box>
                 </Tooltip>
                 <Tooltip
@@ -194,22 +182,17 @@ function Rooms() {
                   }
                 >
                   <Box>
-                <i class="fa-solid fa-mug-hot"></i>
-                    
+                    <i class="fa-solid fa-mug-hot"></i>
                   </Box>
                 </Tooltip>
                 <Tooltip
                   placement="bottom"
-                  title={
-                    <span style={{ fontSize: "14px" }}>Wifi</span>
-                  }
+                  title={<span style={{ fontSize: "14px" }}>Wifi</span>}
                 >
                   <Box>
-                <i class="fa-solid fa-wifi"></i>
-                    
+                    <i class="fa-solid fa-wifi"></i>
                   </Box>
                 </Tooltip>
-
               </div>
               <div className="deluxe-room_content-items-3">
                 <button>
@@ -302,33 +285,29 @@ function Rooms() {
                 <Tooltip
                   placement="top"
                   title={
-                    <span style={{ fontSize: "14px" }}>Direkt Hatlı Telefon</span>
+                    <span style={{ fontSize: "14px" }}>
+                      Direkt Hatlı Telefon
+                    </span>
                   }
                 >
                   <Box>
-                  <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-phone"></i>
                   </Box>
                 </Tooltip>
                 <Tooltip
                   placement="bottom"
-                  title={
-                    <span style={{ fontSize: "14px" }}>Led TV</span>
-                  }
+                  title={<span style={{ fontSize: "14px" }}>Led TV</span>}
                 >
                   <Box>
-                <i class="fa-solid fa-tv"></i>
-                    
+                    <i class="fa-solid fa-tv"></i>
                   </Box>
                 </Tooltip>
                 <Tooltip
                   placement="bottom"
-                  title={
-                    <span style={{ fontSize: "14px" }}>Duş</span>
-                  }
+                  title={<span style={{ fontSize: "14px" }}>Duş</span>}
                 >
                   <Box>
-                <i class="fa-solid fa-shower"></i>
-                    
+                    <i class="fa-solid fa-shower"></i>
                   </Box>
                 </Tooltip>
                 <Tooltip
@@ -338,22 +317,17 @@ function Rooms() {
                   }
                 >
                   <Box>
-                <i class="fa-solid fa-mug-hot"></i>
-                    
+                    <i class="fa-solid fa-mug-hot"></i>
                   </Box>
                 </Tooltip>
                 <Tooltip
                   placement="bottom"
-                  title={
-                    <span style={{ fontSize: "14px" }}>Wifi</span>
-                  }
+                  title={<span style={{ fontSize: "14px" }}>Wifi</span>}
                 >
                   <Box>
-                <i class="fa-solid fa-wifi"></i>
-                    
+                    <i class="fa-solid fa-wifi"></i>
                   </Box>
                 </Tooltip>
-
               </div>
               <div className="junior-room_content-items-3">
                 <button>
@@ -405,33 +379,29 @@ function Rooms() {
                 <Tooltip
                   placement="top"
                   title={
-                    <span style={{ fontSize: "14px" }}>Direkt Hatlı Telefon</span>
+                    <span style={{ fontSize: "14px" }}>
+                      Direkt Hatlı Telefon
+                    </span>
                   }
                 >
                   <Box>
-                  <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-phone"></i>
                   </Box>
                 </Tooltip>
                 <Tooltip
                   placement="bottom"
-                  title={
-                    <span style={{ fontSize: "14px" }}>Led TV</span>
-                  }
+                  title={<span style={{ fontSize: "14px" }}>Led TV</span>}
                 >
                   <Box>
-                <i class="fa-solid fa-tv"></i>
-                    
+                    <i class="fa-solid fa-tv"></i>
                   </Box>
                 </Tooltip>
                 <Tooltip
                   placement="bottom"
-                  title={
-                    <span style={{ fontSize: "14px" }}>Duş</span>
-                  }
+                  title={<span style={{ fontSize: "14px" }}>Duş</span>}
                 >
                   <Box>
-                <i class="fa-solid fa-shower"></i>
-                    
+                    <i class="fa-solid fa-shower"></i>
                   </Box>
                 </Tooltip>
                 <Tooltip
@@ -441,22 +411,17 @@ function Rooms() {
                   }
                 >
                   <Box>
-                <i class="fa-solid fa-mug-hot"></i>
-                    
+                    <i class="fa-solid fa-mug-hot"></i>
                   </Box>
                 </Tooltip>
                 <Tooltip
                   placement="bottom"
-                  title={
-                    <span style={{ fontSize: "14px" }}>Wifi</span>
-                  }
+                  title={<span style={{ fontSize: "14px" }}>Wifi</span>}
                 >
                   <Box>
-                <i class="fa-solid fa-wifi"></i>
-                    
+                    <i class="fa-solid fa-wifi"></i>
                   </Box>
                 </Tooltip>
-
               </div>
               <div className="wa_guest-room_content-items-3">
                 <button>

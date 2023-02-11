@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./hotelConfig.scss";
 import circular_logo from "../../images/circular.png";
 import { motion } from "framer-motion";
-import HorizontalScroll from "react-scroll-horizontal";
 function HotelConfig(props) {
   return (
     <div className="hotel-config">
